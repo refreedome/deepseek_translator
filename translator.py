@@ -1,9 +1,10 @@
 import os
+from dotenv import load_dotenv
 from openai import OpenAI
-
+load_dotenv()
 # 初始化客户端
 client = OpenAI(
-    api_key="sk-5b2a6468c0774ed5a97f32acbfa1a986",  # 替换为你的真实API Key
+    api_key="DEEPSEEK_API_KEY",
     base_url="https://api.deepseek.com"
 )
 
